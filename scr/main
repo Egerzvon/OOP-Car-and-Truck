@@ -1,0 +1,13 @@
+import Cars.Truck;
+
+public class MainCar {
+    public static void main(String[] args) {
+        Car firstCar = new Car("Mazda", 1990, 10, 100000, 100);
+        System.out.println(firstCar.description());
+
+        System.out.println("===================");
+
+        Truck firstTruck = new Truck("Volvo", 2015, 12, 200000, 20000);
+        System.out.println(firstTruck.description());
+    }
+}

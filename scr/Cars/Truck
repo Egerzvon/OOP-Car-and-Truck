@@ -1,0 +1,11 @@
+package Cars;
+
+//Создать класс наследник
+// - Грузовик. Который, наследует все атрибуты класса, но количество колес = 8.
+public class Truck extends Car {
+
+    public Truck(String model, int year, int volume, int price, int run) {
+        super(model, year, volume, price, run);
+        this.wheels = 8;
+    }
+}

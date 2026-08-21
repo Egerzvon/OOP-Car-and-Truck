@@ -1,0 +1,31 @@
+package Cars;
+//Создайте класс Car.
+public class Car {
+    //Добавьте обязательные атрибуты класса: модель, год выпуска, объем двигателя, цена, пробег,
+    // количество колес = 4.
+    public String model;
+    public int year;
+    public double volume;
+    public int price;
+    public int run;
+    public int wheels;
+
+    public Car(String model, int year, int volume, int price, int run) {
+        this.model = model;
+        this.year = year;
+        this.volume = volume;
+        this.price = price;
+        this.run = run;
+        this.wheels = 4;
+    }
+
+    //Добавить метод, который возвращает информацию по объекту
+    public String description () {
+        return "Модель: " + model + "\n" +
+                "Год выпуска: " + year + "\n" +
+                "Объем двигателя: " + volume + "\n" +
+                "Цена: " + price + "\n" +
+                "Пробег: " + run + "\n" +
+                "Количество колес: " + wheels;
+    }
+}
